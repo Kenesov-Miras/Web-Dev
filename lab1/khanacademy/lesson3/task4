@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Book</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-color: rgb(240, 240, 240);
+        }
+
+        h1 {
+            color: rgb(150, 0, 0);
+        }
+
+        table, th, td {
+            border: 1px solid rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+
+<h1>My Recipe Book</h1>
+
+<h2>Contents</h2>
+<ol>
+    <li><a href="#r1">Pancakes</a></li>
+</ol>
+
+<h2 id="r1">Pancakes</h2>
+
+<ul>
+    <li>Time: 10 minutes</li>
+    <li>Serves: 2</li>
+</ul>
+
+<table>
+    <tr>
+        <th>Ingredient</th>
+        <th>Quantity</th>
+    </tr>
+    <tr>
+        <td>Flour</td>
+        <td>1 cup</td>
+    </tr>
+    <tr>
+        <td>Milk</td>
+        <td>1 cup</td>
+    </tr>
+</table>
+
+<p><strong>Step 1:</strong> Mix ingredients.</p>
+<p><strong>Step 2:</strong> Cook on pan.</p>
+
+</body>
+</html>
 
