@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Travel webpage</title>
+        <style>
+            body{
+                background-color:rgb(247, 67, 148);
+            }
+            p{
+                color:rgb(0, 25, 214);
+            }
+            #things-to-see{
+                color:rgb(231, 235, 9);
+            }
+            #places-to-go{
+                color:rgb(0, 252, 29);
+            }
+            #food-to-eat{
+                color:rgb(37, 247, 236);
+            }
+            .headlines{
+                color:rgb(255, 255, 255);
+            }
+            
+        </style>
+    </head>
+    <body>
+    
+        <h1>Travel to Japan</h1>
+        
+        <h2 class = "headlines">Things to See</h2>
+        <ul id="things-to-see">
+            <li><strong>Mount Fuji</strong></li>
+            <img src = "https://www.wamazing.com/media/article/a-1980/" width="200">
+            <li><strong>Cherry blossom trees</strong></li>
+            <img src = "https://www.thetreecenter.com/all-about-cherry-blossom-tree/?srsltid=AfmBOoqntcuRBCZ8HiXjzR7mc2Y-0jdwbpCqeSJ-uCVyZ-ppPq-YPj47" width = "200">
+            <li><strong>Ancient temples and shrines</strong></li>
+            <img src = "https://blog.gaijinpot.com/japanese-shrines-and-temples-introduction/" width = "200">
+        </ul>
+            
+        <h2 class = "headlines" >Places to Go</h2>
+        <ul id="places-to-go">
+            <li><strong>Tokyo</strong></li>
+            <img src = "https://www.klm.kz/travel-guide/destinations/asia/japan/tokyo" width = "200">
+            <li><strong>Kyoto</strong></li>
+            <img src = "https://www.neverendingvoyage.com/things-to-do-in-kyoto-japan/" width = "200">
+            <li><strong>Osaka</strong></li>
+            <img src = "https://japancheapo.com/food-and-drink/things-to-do-in-osaka/" width = "200">
+        </ul>
+        
+        <h2 class = "headlines">Food to Eat</h2>
+        <ul id="food-to-eat">
+            <li><strong>Sushi</strong></li>
+            <img src = "https://www.yakinori.co.uk/whats-the-difference-between-sushi-sashimi-and-maki/" width = "200">
+            <li><strong>Ramen</strong></li>
+            <img src = "https://sudachirecipes.com/shoyu-ramen/" width = "200">
+            <li><strong>Tempura</strong></li>
+            <img src = "https://www.japanesecooking101.com/tempura-recipe/" width = "200">
+        </ul>
+        
+        <h2 class = "headlines" >Enticing Details</h2>
+        <p><em>Japan is a very clean and safe country.<br>
+        The culture is unique and people are very polite.<br>
+        You can see ancient temples and modern technology in one place.<br>
+        The nature is beautiful with mountains, forests, and the sea.<br></em></p>
+    </body>
+</html>
