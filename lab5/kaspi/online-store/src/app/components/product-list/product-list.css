@@ -1,0 +1,13 @@
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+  padding: 10px 0 20px;
+}
+.empty{
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px dashed rgba(255,255,255,.15);
+  opacity: .85;
+  font-family: Inter, sans-serif;
+}

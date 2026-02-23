@@ -1,0 +1,26 @@
+<div class="card">
+  <a class="img-wrap" [href]="product.link" target="_blank" rel="noopener">
+    <img class="main-image" [src]="currentImage" [alt]="product.name">
+  </a>
+
+  <div class="thumbnails" *ngIf="product.images?.length">
+    <img *ngFor="let img of product.images" [src]="img" (click)="changeImage(img)" alt="">
+  </div>
+
+  <h3 class="title">{{ product.name }}</h3>
+  <p class="desc">{{ product.description }}</p>
+
+  <div class="meta">
+    <span class="price">{{ product.price }} ₸</span>
+    <span class="rating">⭐ {{ product.rating }}</span>
+  </div>
+
+  <div class="actions">
+    <button class="btn" (click)="like()">❤ {{ product.likes }}</button>
+    <button class="btn" (click)="shareWhatsApp()">WhatsApp</button>
+    <button class="btn" (click)="shareTelegram()">Telegram</button>
+    <button class="btn danger" (click)="remove()">Delete</button>
+  </div>
+
+  <a class="kaspi" [href]="product.link" target="_blank" rel="noopener">View on Kaspi</a>
+</div>
