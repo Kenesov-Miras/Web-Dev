@@ -1,0 +1,23 @@
+<div class="album-photos-container p-4">
+  <h1>Album Photos</h1>
+
+  <div class="row">
+    <div class="col-md-4 mb-3" *ngFor="let photo of photos">
+
+      <img
+        [src]="photo.thumbnailUrl"
+        [alt]="photo.title"
+        class="img-thumbnail"
+        (error)="onImageError(photo)"
+      >
+
+      <p class="mt-2">{{ photo.title }}</p>
+
+    </div>
+  </div>
+
+  <button class="btn btn-secondary mt-3" (click)="goBack()">
+    Return
+  </button>
+
+</div>
