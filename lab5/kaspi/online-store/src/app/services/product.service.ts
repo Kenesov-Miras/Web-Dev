@@ -12,7 +12,7 @@ export class ProductService {
   ];
 
   private readonly products: Product[] = [
-    // ===== Smartphones (categoryId: 1) =====
+  
     {
       id: 1, categoryId: 1, likes: 0,
       name: 'iPhone 15',
@@ -79,7 +79,7 @@ export class ProductService {
       link: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-belyi-102298420/?c=750000000'
     },
 
-    // ===== Laptops (categoryId: 2) =====
+    
     {
       id: 6, categoryId: 2, likes: 0,
       name: 'Apple MacBook Air 13 2025 / 16 Гб / SSD 512 Гб / macOS / MW0X3',
@@ -151,7 +151,7 @@ export class ProductService {
       link: 'https://kaspi.kz/shop/p/hp-victus-15-6-16-gb-ssd-512-gb-dos-15-fb2027ci-a19gqea-119250104/?c=750000000'
     },
 
-    // ===== Headphones (categoryId: 3) =====
+  
     {
       id: 11, categoryId: 3, likes: 0,
       name: 'Sony WH-1000XM4 черный',
@@ -222,7 +222,7 @@ export class ProductService {
       link: 'https://kaspi.kz/shop/p/naushniki-beats-studio-pro-chernyi-113105971/?c=750000000'
     },
 
-    // ===== Tablets (categoryId: 4) =====
+
     {
       id: 16, categoryId: 4, likes: 0,
       name: 'Xiaomi Redmi Pad 2 4G 11 дюйм 8 Гб/256 Гб серый',
@@ -292,6 +292,7 @@ export class ProductService {
       ],
       link: 'https://kaspi.kz/shop/p/samsung-galaxy-tab-a9-5g-11-djuim-8-gb-128-gb-serebristyi-114175605/?c=750000000'
     },
+    
   ];
 
   getCategories(): Category[] {

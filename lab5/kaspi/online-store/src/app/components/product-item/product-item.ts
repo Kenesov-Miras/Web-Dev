@@ -11,7 +11,12 @@ import { Product } from '../../models/product.model';
 })
 export class ProductItemComponent implements OnInit {
   @Input() product!: Product;
+
+  @Input() isLiked = false; 
+
   @Output() deleteProduct = new EventEmitter<number>();
+
+  @Output() toggleLike = new EventEmitter<number>(); 
 
   currentImage = '';
 
@@ -24,7 +29,7 @@ export class ProductItemComponent implements OnInit {
   }
 
   like() {
-    this.product.likes += 1;
+    this.toggleLike.emit(this.product.id); 
   }
 
   remove() {

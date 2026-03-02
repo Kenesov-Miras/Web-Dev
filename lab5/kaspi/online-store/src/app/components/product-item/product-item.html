@@ -16,11 +16,17 @@
   </div>
 
   <div class="actions">
-    <button class="btn" (click)="like()">❤ {{ product.likes }}</button>
+    
+    <button class="btn"
+            (click)="like()"
+            [class.like-active]="isLiked">
+      ❤ {{ product.likes }}
+    </button>
+
     <button class="btn" (click)="shareWhatsApp()">WhatsApp</button>
     <button class="btn" (click)="shareTelegram()">Telegram</button>
     <button class="btn danger" (click)="remove()">Delete</button>
   </div>
 
   <a class="kaspi" [href]="product.link" target="_blank" rel="noopener">View on Kaspi</a>
-</div>
+</div>я

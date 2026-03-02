@@ -12,6 +12,7 @@ import { ProductCard } from '../product-card/product-card';
 })
 export class ProductList {
 
+  
   products: Product[] = [
 
   {
@@ -155,16 +156,25 @@ export class ProductList {
     description: 'Apple iPhone 13 128GB White.',
     price: 329990,
     rating: 5.0,
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/hc9/h90/64209083007006.jpg?format=gallery-medium',
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/h06/h08/64213171568670.jpg?format=gallery-medium',
     images: [
       'https://resources.cdn-kaspi.kz/img/m/p/h3b/h93/64209085235230.jpg?format=gallery-medium',
       'https://resources.cdn-kaspi.kz/img/m/p/h8f/hce/64209121476638.jpg?format=gallery-medium',
       'https://resources.cdn-kaspi.kz/img/m/p/h4b/h84/64209123573790.jpg?format=gallery-medium'
     ],
     link: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-belyi-102298420/?c=750000000'
-  }
+  },
 
 ];
+
+sortAscending() {
+  this.products.sort((a, b) => a.price - b.price);
+}
+
+sortDescending() {
+  this.products.sort((a, b) => b.price - a.price);
+}
+
 
 
 }

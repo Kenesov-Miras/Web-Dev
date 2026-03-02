@@ -13,7 +13,29 @@ import { ProductItemComponent } from '../product-item/product-item';
 export class ProductListComponent {
   @Input() products: Product[] = [];
 
+  private likedIds = new Set<number>(); 
+
+  
+  isLiked(id: number): boolean {
+    return this.likedIds.has(id);
+  }
+
+  
+  onToggleLike(id: number) {
+    const item = this.products.find(p => p.id === id);
+    if (!item) return;
+
+    if (this.likedIds.has(id)) {
+      this.likedIds.delete(id);              
+      item.likes = Math.max(0, item.likes - 1); 
+    } else {
+      this.likedIds.add(id);                 
+      item.likes += 1;                       
+    }
+  }
+
   onDelete(id: number) {
     this.products = this.products.filter(p => p.id !== id);
+    this.likedIds.delete(id); 
   }
 }

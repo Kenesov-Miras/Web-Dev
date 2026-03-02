@@ -63,3 +63,8 @@
   font-weight:800;
 }
 .kaspi:hover{ opacity:.92; }
+
+
+.like-active{
+  background:#d60000 !important;
+}

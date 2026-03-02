@@ -7,7 +7,7 @@ describe('ProductListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProductListComponent], // standalone болса осылай
+      imports: [ProductListComponent], 
     }).compileComponents();
 
     fixture = TestBed.createComponent(ProductListComponent);

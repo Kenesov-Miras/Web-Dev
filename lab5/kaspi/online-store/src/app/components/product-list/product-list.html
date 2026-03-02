@@ -6,6 +6,8 @@
   <app-product-item
     *ngFor="let p of products"
     [product]="p"
+    [isLiked]="isLiked(p.id)"         
+    (toggleLike)="onToggleLike($event)"
     (deleteProduct)="onDelete($event)">
   </app-product-item>
 </div>
