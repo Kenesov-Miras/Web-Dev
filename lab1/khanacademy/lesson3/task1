@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Links for learning</title>
+    </head>
+    <body>
+        
+        <h1>Links for learning</h1>
+        
+        <ul>
+            <li><a href="https://youtu.be/ItZN6o0ylao?list=PLfloRV9R6_kRQihyrQV9eVYt32KNGqXRo">HTML basics</a></li>
+            <li><a href="https://youtu.be/r2qd-MKHhgs?list=PLfloRV9R6_kRQihyrQV9eVYt32KNGqXRo">HTML: Text emphasis</a></li>
+            <li><a href="https://youtu.be/6fmob-VeAMo?list=PLfloRV9R6_kRQihyrQV9eVYt32KNGqXRo">HTML: Lists</a></li>
+        </ul>
+
+        <a target="_blank" href="https://youtu.be/NwFVSclD_uc?list=RDNwFVSclD_uc"><img src="https://www.kasandbox.org/programming-images/cute/Heart.png" alt = "Heart" ></a>
+        
+    </body>
+</html>
